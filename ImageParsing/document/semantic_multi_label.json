@@ -1,0 +1,77 @@
+{
+  "Frame_Wise_Labels": {
+    "Time_of_Day": [
+      "Day",
+      "Night",
+      "Dawn/Dusk",
+      "Tunnel"
+    ],
+    "Weather": [
+      "Clear",
+      "Rain",
+      "Fog",
+      "Snow"
+    ],
+    "Road_Type": [
+      "Controlled Access Highway",
+      "Highway",
+      "Urban"
+    ]
+  },
+  "Object": {
+    "Vehicle": {
+      "Vehicle_Type": [
+          "Sedan",
+          "SUV",
+          "Pickup",
+          "Van",
+          "Truck",
+          "Bus",
+          "Other",
+          "Ignore",
+        "Object",
+        "Road_Marking",
+        "Person"
+      ],
+      "Position": [
+          "Ego",
+          "Left",
+          "Right",
+          "Separated",
+          "Other"
+      ],
+      "Occlusion_Type": [
+          "Not_Occluded",
+          "Occluded",
+          "Heavily_Occluded"
+      ],
+      "Truncation_Type": [
+          "Untruncated",
+          "Truncated",
+          "Heavily_Truncated"
+      ],
+      "Direction": [
+          "Same_Direction",
+          "Other_Direction"
+      ],
+      "Type_Color": {
+          "Sedan": "rgba(93,71,139)",
+          "SUV": "rgba(147,112,219)",
+          "Pickup": "rgba(102,154,255)",
+          "Van": "rgba(255,15,215)",
+          "Truck": "rgba(110,175,230)",
+          "Bus": "rgba(235,120,22)",
+          "Other": "rgba(195,155,10)",
+          "Ignore": "rgba(255,192,203)",
+        "Object": "rgba(110,175,230)",
+        "Road_Marking": "rgba(0,255,0)",
+        "Person": "rgba(0,255,255)"
+      }
+    },
+    "Car_Hood": {
+      "Type_Color": {
+          "Car_Hood": "rgba(0,0,255)"
+      }
+    }
+  }
+}

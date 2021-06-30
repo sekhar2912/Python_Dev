@@ -1,0 +1,113 @@
+[
+    {
+        "image_name": "01596.png",
+        "annotations": {
+            "combined": {
+                "image": "null.png",
+                "indexedImage": "null.png"
+            },
+            "labeled": {
+                "road": "null",
+                "driveway": "null",
+                "zebra_crossing": "null",
+                "traffic_light_crossing": "null",
+                "tactile_grid": "null",
+                "fence": "null",
+                "footpath_or_floor": "null",
+                "general_obstacle": "null",
+                "soft_branches_near_footpath": "null",
+                "grass_or_dirt": "null",
+                "grate": "null",
+                "speed_bump": "null",
+                "water_puddle": "null",
+                "barrier_arm": "null",
+                "glass_wall": "null",
+                "door_glass": "null",
+                "door_non_glass": "null",
+                "table_and_chair": "null",
+                "sky": "null",
+                "car": [
+                    "null",
+                    "null",
+                    "null"
+                ],
+                "person": "[]",
+                "trolley": "[]",
+                "animal": "[]",
+                "truck": [
+                    "null.png",
+                    "null.png"
+                ],
+                "personal_mobility_device": "[]",
+                "cyclist": "[]",
+                "motorcyclist": "[]",
+                "robot": "[]"
+            },
+            "unlabeled": "null"
+        },
+        "labelMapping": {
+            "SUV": [
+                {
+                    "index": 1,
+                    "color": "ce73b9",
+                    "attributes": "null"
+                },
+                {
+                    "index": 2,
+                    "color": "b569d6",
+                    "attributes": "null"
+                },
+                {
+                    "index": 3,
+                    "color": "9370db",
+                    "attributes": "null"
+                }
+            ],
+            "Road_Marking": [
+                {
+                    "index": 4,
+                    "color": "00ff00",
+                    "attributes": "null"
+                }
+            ],
+            "Object": [
+                {
+                    "index": 5,
+                    "color": "6eafe6",
+                    "attributes": "null"
+                }
+            ],
+            "Person": [
+                {
+                    "index": 6,
+                    "color": "00ffff",
+                    "attributes": "null"
+                },
+                {
+                    "index": 7,
+                    "color": "86aaf1",
+                    "attributes": "null"
+                }
+            ],
+            "Barrier_Arm": [],
+            "Grass_Or_Dirt": [],
+            "Other": [],
+            "Van": [],
+            "Speed_Bump": [],
+            "Driveway": [],
+            "Traffic_Light_Crossing": [],
+            "Ignore": [],
+            "Bus": [],
+            "Soft_Branches_Near_Footpath": [],
+            "Footpath_Or_Floor": [],
+            "General_Obstacle": [],
+            "Zebra_Crossing": [],
+            "Road": [],
+            "Pickup": [],
+            "Tactile_Grid": [],
+            "Sedan": [],
+            "Grate": [],
+            "Truck": []
+        }
+    }
+]

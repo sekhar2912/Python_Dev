@@ -1,0 +1,188 @@
+[
+    {
+        "image_name": "1.png",
+        "annotations": 
+        {
+            "combined": 
+            {
+                "image": "84ee2dfa-ee46-4865-8f76-85ea33b17c62.png",
+                "indexedImage": "16bd715a-89c9-4332-9e22-aa939f758edf.png"
+            },
+            "labeled": 
+            {
+                "road": "78ef01c1-acce-46c0-8a8b-c46be037db63.png",
+                "driveway": null,
+                "zebra_crossing": null,
+                "traffic_light_crossing": null,
+                "tactile_grid": "9ce63205-5d7b-49bf-920f-5c4352ebf250.png",
+                "fence": null,
+                "footpath_or_floor": "46deaf44-e828-47d8-8ce6-5aa75bb766b7.png",
+                "general_obstacle": "d7ba7a22-91c0-40f1-a299-b7523e53efa5.png",
+                "soft_branches_near_footpath": "91138ece-f6f0-4416-8ba5-31e7581611fa.png",
+                "grass_or_dirt": "05c71af2-e547-4336-888f-14055c2d1f96.png",
+                "grate": null,
+                "speed_bump": null,
+                "water_puddle": null,
+                "barrier_arm": null,
+                "glass_wall": null,
+                "door_glass": null,
+                "door_non_glass": null,
+                "table_and_chair": null,
+                "sky": "f21cb25a-6862-4ca2-9148-24f25079270c.png",
+                "car": 
+                [
+                  "b1d1bd38-8cb4-4faf-ab82-9301f07af878.png",
+                  "588a8761-99e5-4515-88a6-4261936a7575.png",
+                  "74e3863a-017d-4de8-b2da-d3e2ea40d704.png"
+                ],
+                "person": [],
+                "trolley": [],
+                "animal": [],
+                "truck": 
+                [
+                  "74136972-6726-46dd-88c0-17072e1db951.png",
+                  "ef124d9d-587a-4c11-a934-6ac1bd7a1248.png"
+                ],
+                "personal_mobility_device": [],
+                "cyclist": [],
+                "motorcyclist": [],
+                "robot": []
+            },
+            "unlabeled": "3e65d720-f90f-4e63-a343-a5acdda6000c.png"
+        },
+        "labelMapping": 
+        {
+          "road": {
+            "index": 1,
+            "color": "#e6194b",
+            "attributes": null
+          },
+          "driveway": {
+            "index": 2,
+            "color": "#3cb44b",
+            "attributes": null
+          },
+          "zebra_crossing": {
+            "index": 3,
+            "color": "#ffe119",
+            "attributes": null
+          },
+          "traffic_light_crossing": {
+            "index": 4,
+            "color": "#0082c8",
+            "attributes": null
+          },
+          "tactile_grid": {
+            "index": 5,
+            "color": "#f58230",
+            "attributes": null
+          },
+          "fence": {
+            "index": 6,
+            "color": "#911eb4",
+            "attributes": null
+          },
+          "footpath_or_floor": {
+            "index": 7,
+            "color": "#46f0f0",
+            "attributes": null
+          },
+          "general_obstacle": {
+            "index": 8,
+            "color": "#f032e6",
+            "attributes": null
+          },
+          "soft_branches_near_footpath": {
+            "index": 9,
+            "color": "#d2f53c",
+            "attributes": null
+          },
+          "grass_or_dirt": {
+            "index": 10,
+            "color": "#fabebe",
+            "attributes": null
+          },
+          "grate": {
+            "index": 11,
+            "color": "#008080",
+            "attributes": null
+          },
+          "speed_bump": {
+            "index": 12,
+            "color": "#e6beff",
+            "attributes": null
+          },
+          "water_puddle": {
+            "index": 13,
+            "color": "#aa6e28",
+            "attributes": null
+          },
+          "barrier_arm": {
+            "index": 14,
+            "color": "#fffac8",
+            "attributes": null
+          },
+          "glass_wall": {
+            "index": 15,
+            "color": "#800000",
+            "attributes": null
+          },
+          "door_glass": {
+            "index": 16,
+            "color": "#aaffc3",
+            "attributes": null
+          },
+          "door_non_glass": {
+            "index": 17,
+            "color": "#808000",
+            "attributes": null
+          },
+          "table_and_chair": {
+            "index": 18,
+            "color": "#ffd7b4",
+            "attributes": null
+          },
+          "sky": {
+            "index": 19,
+            "color": "#000080",
+            "attributes": null
+          },
+          "car": [
+            {
+              "index": 20,
+              "color": "#808080",
+              "attributes": null
+            },
+            {
+              "index": 21,
+              "color": "#787e94",
+              "attributes": null
+            },
+            {
+              "index": 22,
+              "color": "#928695",
+              "attributes": null
+            }
+          ],
+          "person": [],
+          "trolley": [],
+          "animal": [],
+          "truck": [
+            {
+              "index": 23,
+              "color": "#f33001",
+              "attributes": null
+            },
+            {
+              "index": 24,
+              "color": "#db694c",
+              "attributes": null
+            }
+          ],
+          "personal_mobility_device": [],
+          "cyclist": [],
+          "motorcyclist": [],
+          "robot": []
+        }
+    }
+]
