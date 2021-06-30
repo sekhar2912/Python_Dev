@@ -49,12 +49,12 @@
             "SUV": [
                 {
                     "index": 1,
-                    "color": "ce73b9",
+                    "color": "a9b773",
                     "attributes": "null"
                 },
                 {
                     "index": 2,
-                    "color": "b569d6",
+                    "color": "caedef",
                     "attributes": "null"
                 },
                 {
@@ -85,29 +85,29 @@
                 },
                 {
                     "index": 7,
-                    "color": "86aaf1",
+                    "color": "bfd0e9",
                     "attributes": "null"
                 }
             ],
-            "Barrier_Arm": [],
-            "Grass_Or_Dirt": [],
-            "Other": [],
-            "Van": [],
-            "Speed_Bump": [],
-            "Driveway": [],
-            "Traffic_Light_Crossing": [],
-            "Ignore": [],
-            "Bus": [],
-            "Soft_Branches_Near_Footpath": [],
             "Footpath_Or_Floor": [],
-            "General_Obstacle": [],
-            "Zebra_Crossing": [],
-            "Road": [],
             "Pickup": [],
-            "Tactile_Grid": [],
+            "Zebra_Crossing": [],
+            "Bus": [],
+            "Other": [],
+            "General_Obstacle": [],
+            "Van": [],
+            "Traffic_Light_Crossing": [],
             "Sedan": [],
+            "Tactile_Grid": [],
+            "Ignore": [],
+            "Soft_Branches_Near_Footpath": [],
+            "Driveway": [],
+            "Road": [],
             "Grate": [],
-            "Truck": []
+            "Truck": [],
+            "Speed_Bump": [],
+            "Grass_Or_Dirt": [],
+            "Barrier_Arm": []
         }
     }
 ]

@@ -8,15 +8,18 @@ import getopt, sys
 from random import randint
 
 W = 600
-rook_window = "Drawing : Canvas"
+rook_window = "Multi Channel Image"
+single_win = "Single Channel Image"
 size = W, W, 3
 
 counter = 0
+sc_cnt = 100
 grp_col_dict = {}
 out_put_dict ={}
 uniqueVehType = {}
+id_clr = {}
+id_nc = {}
 
-#------ Spl Category-----
 
 splCtg = {  'Person',
             'Pusher',
@@ -122,8 +125,6 @@ def draw_polygon(img,ppt,clr = (205, 92, 92)):
     bColor = (0, 0,2550) # blue
     ppt = ppt.reshape((-1, 1, 2))
     cv.fillPoly(img, [ppt], clr, line_type)
-    # cv.polylines(img, [ppt], 
-    #                   isClosed, bColor, thickness)
 
 def generateOutputJsonDict(uniqueVehType):
 
@@ -236,6 +237,39 @@ def groupIdPair(data):
             dup[ele] = gr_Id[ele]
     return dup
 
+def getclrIdlist(ini_dict):
+    flipped = {}
+    
+    for key, value in ini_dict.items():
+        if value not in flipped:
+            flipped[value] = [key]
+        else:
+            flipped[value].append(key)
+    return flipped
+
+def generateSingleChanelImage(outSingleCnlImg,imageSc,data):
+    global sc_cnt
+
+    clr_idList = getclrIdlist(id_clr)
+
+    for clr in clr_idList:
+        new_clr = (sc_cnt,sc_cnt,sc_cnt)
+        sc_cnt = sc_cnt + randint(0,50)
+        ids = clr_idList[clr]
+        for id in ids:
+            id_nc[id] = new_clr
+
+    for element in data:
+        for poly in element['polygons']:
+            crdSArray = poly['Coordinates']
+            id = poly["ID"]
+            reduceSArray = [[item / 8 for item in subl] for subl in crdSArray]
+            ppt = np.array(reduceSArray, np.int32)
+            clr = id_nc[id]
+            draw_polygon(imageSc,ppt,clr)
+    return imageSc
+    
+
 def main():
     black = (0,0,0)
     image = create_blank(W, W, rgb_color=black)
@@ -286,7 +320,7 @@ def main():
                     else:
                         clr.add(dict_of_colorCodes.get(vehType))
                 uniqueVehType[vehType] = clr
-
+                id_clr[id] = max(clr)
                 draw_polygon(image,ppt,max(clr))
         
         gc ={}
@@ -322,17 +356,26 @@ def main():
                     crdArray = poly_new['Coordinates']
                     reduceArray1 = [[item / 8 for item in subl] for subl in crdArray]
                     ppt1 = np.array(reduceArray1, np.int32)
+                    id_clr[poly_new["ID"]] = gc[grId]
                     draw_polygon(image,ppt1,gc[grId])
         
        
     f.close()
     outfilename = os.path.join(dirname, 'data/Output_file.json')
     outImagename = os.path.join(dirname, 'data/OutImage.jpg')
+    outSingleCnlImg = os.path.join(dirname, 'data/OutSingleCnlImage.jpg')
+    imageSc = create_blank(W, W, rgb_color=(0,0,0))
     dump_output_json(generateOutputJsonDict(uniqueVehType),outfilename)
-    cv.imshow(rook_window, image)
+   
+    # In case , if we want to pops the image window, pls enable the below commented line
+    #cv.imshow(rook_window, image)
     cv.imwrite(outImagename, image)
-    cv.moveWindow(rook_window, W, 200)
-    cv.waitKey(0)
+    #cv.moveWindow(rook_window, W, 200)
+    generateSingleChanelImage(outSingleCnlImg,imageSc,data)
+    #cv.imshow(single_win, imageSc)
+    cv.imwrite(outSingleCnlImg, imageSc)
+    #cv.moveWindow(single_win, W, 200)
+    #cv.waitKey(0)
     cv.destroyAllWindows()
 
 if __name__ == "__main__":

@@ -4,7 +4,9 @@ This tool will parse the input json file for an image and extract all the co-ord
 a) It also create an output file [File Name - Output_file.json ] under data folder. 
    This output file is created based on as per requirement provided 
 
-b) It creates "OutImage.jpg" file in data folder
+b) It creates "OutImage.jpg" file in data folder [ Multi Channel Image]
+
+c) It generated "OutSingleCnlImage.jpg" in data folder  [ Single Channel Image]
 
 ## Pre-requisite
 Linux:
@@ -38,6 +40,8 @@ NA
 ## Release History
 
 * 0.0.1
-    * Initial Version 
+    * Initial Version and changes for multichannel Image
+* 0.0.2
+    * Added change for Single Channel Image
 
 
